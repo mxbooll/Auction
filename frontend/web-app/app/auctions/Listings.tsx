@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 import AuctionCard from "@/app/auctions/AuctionCard";
 import {Auction, PagedResult} from "@/types";
 import AppPagination from "@/app/components/AppPagination";
-import {getData} from "@/app/actions/AuctionActions";
+import {getData} from "@/app/actions/auctionActions";
 import Filters from "@/app/auctions/Filters";
 import {useParamsStore} from "@/app/hooks/useParamsStore";
 import {shallow} from "zustand/shallow";
