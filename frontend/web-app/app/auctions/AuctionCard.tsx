@@ -1,6 +1,6 @@
 import React from 'react';
 import CountdownTimer from "@/app/auctions/CountdownTimer";
-import Carimage from "@/app/auctions/Carimage";
+import CarImage from "@/app/auctions/CarImage";
 import {Auction} from "@/types";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ export default function AuctionCard({auction}: Props) {
         <Link href={`/auctions/details/${auction.id}`} className='group'>
             <div className="w-full bg-gray-200 aspect-w-16 aspect-h-10 rounded-lg overflow-hidden">
                 <div>
-                    <Carimage imageUrl={auction.imageUrl}/>
+                    <CarImage imageUrl={auction.imageUrl}/>
                     <div className='absolute bottom-2 left-2'>
                         <CountdownTimer auctionEnd={auction.auctionEnd}/>
                     </div>
